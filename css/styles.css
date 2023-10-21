@@ -57,12 +57,16 @@ address {
 
 .header > .container {
   display: flex;
+  align-items: center;
 }
 
 .header-logo-link {
+  margin-right: 82px;
 }
+
 .header-logo-img {
 }
+
 .header-nav {
   display: none;
 }
@@ -89,7 +93,34 @@ address {
   padding: 13px 46px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
-  display: ;
+}
+
+.header-nav-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: transparent;
+  gap: 6px;
+  padding: 0;
+  margin-left: auto;
+}
+
+.header-span {
+  background-color: #ffffff;
+  height: 5px;
+}
+
+.top {
+  width: 44px;
+}
+
+.middle {
+  width: 33px;
+}
+
+.bottom {
+  width: 19px;
 }
 
 /* ========================== */
@@ -145,7 +176,7 @@ address {
   margin-bottom: 21px;
 }
 
-.hero-link {
+.hero-learn-btn {
   color: #fff;
   font-size: 17px;
   font-weight: 500;
@@ -158,7 +189,6 @@ address {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 178px;
 }
 
 /* ======================== */
@@ -195,6 +225,7 @@ address {
 .features-img {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 73px;
 }
 
 .features-list {
@@ -204,7 +235,6 @@ address {
   width: 269px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
 }
 
 .features-item:not(:last-child) {
@@ -217,22 +247,38 @@ address {
   line-height: 1.5;
   letter-spacing: 0.005em;
   margin-bottom: 20px;
-  padding-left: 33px;
 }
 
 .truth {
-  width: 183px;
+  width: 178px;
+  padding-left: 13px;
 }
 
 .interface {
   width: 102px;
+  padding-left: 12px;
 }
 
 .rules {
+  padding-left: 10px;
+}
+
+.features-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features-icon-wrapper {
+  padding-top: 7px;
+}
+
+.features-icon {
+  fill: #02e4c0;
 }
 
 .features-item-text {
   width: 244px;
+  padding-left: 10px;
 }
 
 /* ============================ */
@@ -635,13 +681,24 @@ address {
 .footer-address {
   margin-bottom: 35px;
 }
+
 .footer-address-list {
 }
+
 .footer-address-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .footer-address-item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.footer-address-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-address-item-link {
@@ -652,6 +709,10 @@ address {
   letter-spacing: 0.01em;
 }
 
+.footer-address-icon {
+  fill: #ffffff;
+}
+
 .footer-soc-list {
   display: flex;
   gap: 24px;
@@ -659,7 +720,15 @@ address {
 
 .footer-soc-item {
 }
+
 .footer-soc-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: #ffffff;
 }
 
 /* ========================== */
