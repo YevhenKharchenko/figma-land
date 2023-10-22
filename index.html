@@ -64,8 +64,10 @@
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
-          <button class="hero-btn" type="button">Try For Free</button>
-          <button class="hero-learn-btn" type="button">Learn More</button>
+          <div class="hero-btn-wrapper">
+            <button class="hero-btn" type="button">Try For Free</button>
+            <button class="hero-learn-btn" type="button">Learn More</button>
+          </div>
         </div>
       </section>
 
@@ -76,62 +78,77 @@
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
-          <img
-            class="features-img"
-            src="./images/chat-bot-m-min.png"
-            alt="Chat bot"
-            width=""
-            height="376"
-            height="406"
-          />
-          <ul class="features-list">
-            <li class="features-item">
-              <div class="features-title-wrapper">
-                <div class="features-icon-wrapper">
-                  <svg class="features-icon" width="25" height="24">
-                    <use href="./images/icons.svg#icon-spoon"></use>
-                  </svg>
+          <div class="features-img-wrapper">
+            <picture class="features-picture">
+              <source
+                srcset="./images/chat-bot-min.png"
+                media="(min-width: 1249px)"
+                width="752"
+                height="759"
+              />
+              <source
+                srcset="./images/chat-bot-m-min.png"
+                media="(max-width: 1248px)"
+                width="376"
+                height="406"
+              />
+              <img
+                class="features-img"
+                src="./images/chat-bot-m-min.png"
+                alt="Chat bot"
+                width="376"
+                height="406"
+              />
+            </picture>
+            <ul class="features-list">
+              <li class="features-item">
+                <div class="features-title-wrapper">
+                  <div class="features-icon-wrapper">
+                    <svg class="features-icon" width="25" height="24">
+                      <use href="./images/icons.svg#icon-spoon"></use>
+                    </svg>
+                  </div>
+                  <h3 class="features-item-title truth">
+                    A single source of truth
+                  </h3>
                 </div>
-                <h3 class="features-item-title truth">
-                  A single source of truth
-                </h3>
-              </div>
-              <p class="features-item-text">
-                When you add work to your Slate calendar we automatically
-                calculate useful insights
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="features-title-wrapper">
-                <div class="features-icon-wrapper">
-                  <svg class="features-icon" width="29" height="30">
-                    <use href="./images/icons.svg#icon-alien"></use>
-                  </svg>
+                <p class="features-item-text">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+              <li class="features-item">
+                <div class="features-title-wrapper">
+                  <div class="features-icon-wrapper">
+                    <svg class="features-icon" width="29" height="30">
+                      <use href="./images/icons.svg#icon-alien"></use>
+                    </svg>
+                  </div>
+                  <h3 class="features-item-title interface">
+                    Intuitive interface
+                  </h3>
                 </div>
-                <h3 class="features-item-title interface">
-                  Intuitive interface
-                </h3>
-              </div>
-              <p class="features-item-text">
-                When you add work to your Slate calendar we automatically
-                calculate useful insights
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="features-title-wrapper">
-                <div class="features-icon-wrapper">
-                  <svg class="features-icon" width="41" height="19">
-                    <use href="./images/icons.svg#icon-infinity"></use>
-                  </svg>
+                <p class="features-item-text">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+              <li class="features-item">
+                <div class="features-title-wrapper">
+                  <div class="features-icon-wrapper">
+                    <svg class="features-icon" width="41" height="19">
+                      <use href="./images/icons.svg#icon-infinity"></use>
+                    </svg>
+                  </div>
+                  <h3 class="features-item-title rules">Or with rules</h3>
                 </div>
-                <h3 class="features-item-title rules">Or with rules</h3>
-              </div>
-              <p class="features-item-text">
-                When you add work to your Slate calendar we automatically
-                calculate useful insights
-              </p>
-            </li>
-          </ul>
+                <p class="features-item-text">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -150,28 +167,59 @@
                 helps you identify .
               </p>
               <button class="contents-item-btn">Sign Up</button
-              ><img
-                class="contents-item-img"
-                src="./images/Macbook-Pro-m-min.png"
-                alt="Macbook Pro"
-                width="297"
-                height="175"
-              />
+              ><picture class="contents-item-picture">
+                <source
+                  srcset="./images/Macbook-Pro-min.png"
+                  media="(min-width: 1249px)"
+                  width="405"
+                  height="227"
+                />
+                <source
+                  srcset="./images/Macbook-Pro-m-min.png"
+                  media="(max-width: 1248px)"
+                  width="297"
+                  height="175"
+                />
+                >
+                <img
+                  class="contents-item-img"
+                  src="./images/Macbook-Pro-m-min.png"
+                  alt="Macbook Pro"
+                  width="297"
+                  height="175"
+                />
+                ></picture
+              >
             </li>
             <li class="contents-item">
               <h3 class="contents-item-title">Design with real data</h3>
-              <p class="contents-item-text">
+              <p class="contents-item-text contents-text-bottom">
                 Ever wondered if you're too reliant on a client for work? Slate
                 helps you identify .
               </p>
-              <button class="contents-item-btn">Try For Free</button
-              ><img
-                class="contents-item-img"
-                src="./images/Boards-Notifications-m-min.png"
-                alt="Boards notifications"
-                width="280"
-                height="204"
-              />
+              <button class="contents-item-btn btn-free">Try For Free</button
+              ><picture class="contents-item-picture">
+                <source
+                  srcset="./images/Boards-Notifications-min.png"
+                  media="(min-width: 1249px)"
+                  width="379"
+                  height="276"
+                />
+                <source
+                  srcset="./images/Boards-Notifications-m-min.png"
+                  media="(max-width: 1248px)"
+                  width="280"
+                  height="204"
+                />
+                <img
+                  class="contents-item-img"
+                  src="./images/Boards-Notifications-m-min.png"
+                  alt="Boards notifications"
+                  width="280"
+                  height="204"
+                />
+                ></picture
+              >
             </li>
           </ul>
         </div>
@@ -189,7 +237,7 @@
               <img
                 class="gallery-item-img"
                 src="./images/camera-m-min.jpg"
-                alt="Camera"
+                alt="Camcorder"
                 width="329"
                 height="285"
               />
@@ -222,6 +270,64 @@
               />
             </li>
           </ul>
+          <ul class="gallery-list-desktop">
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/camera-min.jpg"
+                alt="Camcorder"
+                width="225"
+                height="285"
+              />
+            </li>
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/tablet-min.jpg"
+                alt="Tablet"
+                width="225"
+                height="285"
+              />
+            </li>
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/table-min.jpg"
+                alt="Women at the table"
+                width="225"
+                height="285"
+              />
+            </li>
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/monitor-min.jpg"
+                alt="Monitor"
+                width="225"
+                height="285"
+              />
+            </li>
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/screen-min.jpg"
+                alt="Screen"
+                width="395"
+                height="285"
+              />
+            </li>
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/laptop-min.jpg"
+                alt="Laptop"
+                width="225"
+                height="285"
+              />
+            </li>
+            <li class="gallery-item-desktop">
+              <img
+                src="./images/photo-min.jpg"
+                alt="Camera"
+                width="401"
+                height="285"
+              />
+            </li>
+          </ul>
           <button class="gallery-btn" type="button">See more</button>
         </div>
       </section>
@@ -235,58 +341,142 @@
           </p>
           <ul class="partners-list">
             <li class="partners-item">
-              <img
-                class="partners-item-img"
-                src="./images/logos_apple-app-store.svg"
-                alt="Logo App Store"
-                width="60"
-                height="60"
-              />
+              <picture>
+                <source
+                  srcset="./images/logos_apple-app-store.svg"
+                  media="(min-width: 1249px)"
+                  width="60"
+                  height="60"
+                />
+                <source
+                  srcset="./images/logos_apple-app-store-m.svg"
+                  media="(max-width: 1248px)"
+                  width="60"
+                  height="60"
+                />
+                <img
+                  class="partners-item-img"
+                  src="./images/logos_apple-app-store-m.svg"
+                  alt="Logo App Store"
+                  width="60"
+                  height="60"
+                />
+              </picture>
             </li>
             <li class="partners-item">
-              <img
-                class="partners-item-img"
-                src="./images/logos_apiary.svg"
-                alt="Logo Apiary"
-                width="60"
-                height="61"
-              />
+              <picture>
+                <source
+                  srcset="./images/logos_apiary.svg"
+                  media="(min-width: 1249px)"
+                  width="60"
+                  height="61"
+                />
+                <source
+                  srcset="./images/logos_apiary-m.svg"
+                  media="(max-width: 1248px)"
+                  width="60"
+                  height="61"
+                />
+                <img
+                  class="partners-item-img"
+                  src="./images/logos_apiary-m.svg"
+                  alt="Logo Apiary"
+                  width="60"
+                  height="61"
+                />
+              </picture>
             </li>
             <li class="partners-item">
-              <img
-                class="partners-item-img"
-                src="./images/logos_android-icon.svg"
-                alt="Logo Android"
-                width="60"
-                height="71"
-              />
+              <picture>
+                <source
+                  srcset="./images/logos_android-icon.svg"
+                  media="(min-width: 1249px)"
+                  width="60"
+                  height="71"
+                />
+                <source
+                  srcset="./images/logos_android-icon-m.svg"
+                  media="(max-width: 1248px)"
+                  width="60"
+                  height="71"
+                />
+                <img
+                  class="partners-item-img"
+                  src="./images/logos_android-icon-m.svg"
+                  alt="Logo Android"
+                  width="60"
+                  height="71"
+                />
+              </picture>
             </li>
             <li class="partners-item">
-              <img
-                class="partners-item-img"
-                src="./images/logos_basecamp-m.svg"
-                alt=" Logo Basecamp"
-                width="56"
-                height="46"
-              />
+              <picture>
+                <source
+                  srcset="./images/logos_basecamp.svg"
+                  media="(min-width: 1249px)"
+                  width="72"
+                  height="60"
+                />
+                <source
+                  srcset="./images/logos_basecamp-m.svg"
+                  media="(max-width: 1248px)"
+                  width="56"
+                  height="46"
+                />
+                <img
+                  class="partners-item-img"
+                  src="./images/logos_basecamp-m.svg"
+                  alt=" Logo Basecamp"
+                  width="56"
+                  height="46"
+                />
+              </picture>
             </li>
             <li class="partners-item">
-              <img
-                class="partners-item-img"
-                src="./images/logos_airbnb-m.svg"
-                alt="Logo Airbnb"
-                width="47"
-                height="51"
-              />
+              <picture>
+                <source
+                  srcset="./images/logos_airbnb.svg"
+                  media="(min-width: 1249px)"
+                  width="60"
+                  height="65"
+                />
+                <source
+                  srcset="./images/logos_airbnb-m.svg"
+                  media="(max-width: 1248px)"
+                  width="47"
+                  height="51"
+                />
+                <img
+                  class="partners-item-img"
+                  src="./images/logos_airbnb-m.svg"
+                  alt="Logo Airbnb"
+                  width="47"
+                  height="51"
+                />
+              </picture>
             </li>
             <li class="partners-item">
-              <img
-                class="partners-item-img"
-                src="./images/logos_ibm-m.svg"
-                alt="Logo IBM"
-                width="83"
-                height="33"
-              />
+              <picture>
+                <source
+                  srcset="./images/logos_ibm.svg"
+                  media="(min-width: 1249px)"
+                  width="150"
+                  height="60"
+                />
+                <source
+                  srcset="./images/logos_ibm-m.svg"
+                  media="(max-width: 1248px)"
+                  width="83"
+                  height="33"
+                />
+                <img
+                  class="partners-item-img"
+                  src="./images/logos_ibm-m.svg"
+                  alt="Logo IBM"
+                  width="83"
+                  height="33"
+                />
+              </picture>
             </li>
           </ul>
           <button class="partners-btn">All Partners</button>
@@ -297,21 +487,42 @@
         <div class="container">
           <h2 class="testimonials-title">Testimonials</h2>
           <ul class="testimonials-list">
-            <li class="testimonials-item">
+            <li class="testimonials-item testimonials-top-item">
               <div class="testimonials-item-img-wrapper">
-                <img
-                  class="testimonials-img"
-                  src="./images/wade-m-min.png"
-                  alt=""
-                  width="50"
-                  height="50"
-                />
+                <picture>
+                  <source
+                    srcset="./images/claire-min.png"
+                    media="(min-width: 1249px)"
+                    width="50"
+                    height="50"
+                  />
+                  <source
+                    srcset="./images/wade-m-min.png"
+                    media="(max-width: 1248px)"
+                    width="50"
+                    height="50"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/wade-m-min.png"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </picture>
                 <div class="testimonials-item-text-wrapper">
                   <p class="testimonials-item-name-text">Wade Steward</p>
+                  <p class="testimonials-item-name-text-desktop">Claire Bell</p>
                   <p class="testimonials-item-prof-text">Designer</p>
                 </div>
               </div>
-              <p class="testimonials-item-text">
+              <p class="testimonials-item-text text-mobile">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.
+              </p>
+              <p class="testimonials-item-text-desktop">
                 Slate helps you see how many more days you need to work to reach
                 your financial goal for the month and year. Slate helps you see
                 how many more days you need to work to reach your financial goal
@@ -321,15 +532,33 @@
             </li>
             <li class="testimonials-item">
               <div class="testimonials-item-img-wrapper">
-                <img
-                  class="testimonials-img"
-                  src="./images/philip-m-min.png"
-                  alt=""
-                  width="50"
-                  height="50"
-                />
+                <picture>
+                  <source
+                    srcset="./images/francisco-min.png"
+                    media="(min-width: 1249px)"
+                    width="50"
+                    height="50"
+                  />
+                  <source
+                    srcset="./images/philip-m-min.png"
+                    media="(max-width: 1248px)"
+                    width="50"
+                    height="50"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/philip-m-min.png"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </picture>
+
                 <div class="testimonials-item-text-wrapper">
                   <p class="testimonials-item-name-text">Philip Watson</p>
+                  <p class="testimonials-item-name-text-desktop">
+                    Francisco Lane
+                  </p>
                   <p class="testimonials-item-prof-text">Designer</p>
                 </div>
               </div>
@@ -337,21 +566,37 @@
                 Slate helps you see how many more days you need to work to reach
                 your financial goal for the month and year. Slate helps you see
                 how many more days you need to work to reach your financial goal
-                for the month and year.your financial goal for the month and
-                year.
+                for the month and year.
               </p>
             </li>
             <li class="testimonials-item">
               <div class="testimonials-item-img-wrapper">
-                <img
-                  class="testimonials-img"
-                  src="./images/arthur-m-min.png"
-                  alt=""
-                  width="50"
-                  height="50"
-                />
+                <picture>
+                  <source
+                    srcset="./images/ralph-min.png"
+                    media="(min-width: 1249px)"
+                    width="50"
+                    height="50"
+                  />
+                  <source
+                    srcset="./images/arthur-m-min.png"
+                    media="(max-width: 1248px)"
+                    width="50"
+                    height="50"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/arthur-m-min.png"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </picture>
                 <div class="testimonials-item-text-wrapper">
                   <p class="testimonials-item-name-text">Arthur Wilson</p>
+                  <p class="testimonials-item-name-text-desktop">
+                    Ralph Fisher
+                  </p>
                   <p class="testimonials-item-prof-text">Designer</p>
                 </div>
               </div>
@@ -359,21 +604,38 @@
                 Slate helps you see how many more days you need to work to reach
                 your financial goal for the month and year. Slate helps you see
                 how many more days you need to work to reach your financial goal
-                for the month and year.your financial goal for the month and
-                year.
+                for the month and year.
               </p>
             </li>
-            <li class="testimonials-item">
+            <li class="testimonials-item testimonials-bottom-right-item">
               <div class="testimonials-item-img-wrapper">
-                <img
-                  class="testimonials-img"
-                  src="./images/regina-m-min.png"
-                  alt=""
-                  width="50"
-                  height="50"
-                />
+                <picture>
+                  <source
+                    srcset="./images/jorge-min.png"
+                    media="(min-width: 1249px)"
+                    width="50"
+                    height="50"
+                  />
+                  <source
+                    srcset="./images/regina-m-min.png"
+                    media="(max-width: 1248px)"
+                    width="50"
+                    height="50"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/regina-m-min.png"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </picture>
+
                 <div class="testimonials-item-text-wrapper">
                   <p class="testimonials-item-name-text">Regina Black</p>
+                  <p class="testimonials-item-name-text-desktop">
+                    Jorge Murphy
+                  </p>
                   <p class="testimonials-item-prof-text">Designer</p>
                 </div>
               </div>
@@ -381,8 +643,7 @@
                 Slate helps you see how many more days you need to work to reach
                 your financial goal for the month and year. Slate helps you see
                 how many more days you need to work to reach your financial goal
-                for the month and year.your financial goal for the month and
-                year.
+                for the month and year.
               </p>
             </li>
           </ul>
@@ -392,15 +653,33 @@
       <section class="opentype">
         <div class="container">
           <div class="opentype-content-wrapper">
-            <h2 class="opentype-title">OpenType features and Variable fonts</h2>
-            <button class="opentype-btn" type="button">Try For Free</button>
-            <img
-              class="opentype-img"
-              src="./images/line-chart-m-min.png"
-              alt="Line chart"
-              width="541"
-              height="474"
-            />
+            <div class="opentype-title-wrapper">
+              <h2 class="opentype-title">
+                OpenType features and Variable fonts
+              </h2>
+              <button class="opentype-btn" type="button">Try For Free</button>
+            </div>
+            <picture class="opentype-pic">
+              <source
+                srcset="./images/line-chart-min.png"
+                media="(min-width: 1249px)"
+                width="585"
+                height="370"
+              />
+              <source
+                srcset="./images/line-chart-m-min.png"
+                media="(max-width: 1248px)"
+                width="541"
+                height="474"
+              />
+              <img
+                class="opentype-img"
+                src="./images/line-chart-m-min.png"
+                alt="Line chart"
+                width="541"
+                height="474"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -459,46 +738,48 @@
             </li>
           </ul>
         </div>
-        <address class="footer-address">
-          <ul class="footer-address-list">
-            <li class="footer-address-item">
-              <a class="footer-address-icon-link" href=""
-                ><svg class="footer-address-icon" width="46" height="46">
-                  <use href="./images/icons.svg#icon-map"></use></svg
+        <div class="footer-contacts">
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a class="footer-address-icon-link" href=""
+                  ><svg class="footer-address-icon" width="46" height="46">
+                    <use href="./images/icons.svg#icon-map"></use></svg
+                ></a>
+                <a class="footer-address-item-link" href=""
+                  >7480 Mockingbird Hill undefined</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a class="footer-address-icon-link" href=""
+                  ><svg class="footer-address-icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-phone"></use></svg
+                ></a>
+                <a class="footer-address-item-link" href="">(239) 555-0108</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="footer-soc-list">
+            <li class="footer-soc-item">
+              <a class="footer-soc-item-link" href=""
+                ><svg class="footer-soc-icon" width="41" height="41">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
-              <a class="footer-address-item-link" href=""
-                >7480 Mockingbird Hill undefined</a
-              >
             </li>
-            <li class="footer-address-item">
-              <a class="footer-address-icon-link" href=""
-                ><svg class="footer-address-icon" width="35" height="35">
-                  <use href="./images/icons.svg#icon-phone"></use></svg
+            <li class="footer-soc-item">
+              <a class="footer-soc-item-link" href=""
+                ><svg class="footer-soc-icon" width="41" height="41">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
-              <a class="footer-address-item-link" href="">(239) 555-0108</a>
+            </li>
+            <li class="footer-soc-item">
+              <a class="footer-soc-item-link" href=""
+                ><svg class="footer-soc-icon" width="41" height="41">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
-        <ul class="footer-soc-list">
-          <li class="footer-soc-item">
-            <a class="footer-soc-item-link" href=""
-              ><svg class="footer-soc-icon" width="41" height="41">
-                <use href="./images/icons.svg#icon-twitter"></use></svg
-            ></a>
-          </li>
-          <li class="footer-soc-item">
-            <a class="footer-soc-item-link" href=""
-              ><svg class="footer-soc-icon" width="41" height="41">
-                <use href="./images/icons.svg#icon-facebook"></use></svg
-            ></a>
-          </li>
-          <li class="footer-soc-item">
-            <a class="footer-soc-item-link" href=""
-              ><svg class="footer-soc-icon" width="41" height="41">
-                <use href="./images/icons.svg#icon-linkedin"></use></svg
-            ></a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
   </body>
